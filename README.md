@@ -7,3 +7,8 @@
 ### [📙 Free Three.js Cheatsheet](https://resource.jsmastery.pro/threejs-cheatsheet)
 ### [🌐 Best Hosting for Your Websites](https://hostinger.com/javascript10)
 
+### Cloning this repository:
+Cloning the repo with all its history results in a ~2 GB download. If you don't need the whole history, you can use the depth parameter to significantly reduce download size.
+```
+git clone --depth=1 https://github.com/cchoirun/task-grafkom
+```
