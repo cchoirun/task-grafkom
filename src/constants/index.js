@@ -26,140 +26,55 @@ import {
     typescript
 } from "../assets/icons";
 
-export const skills = [
-    {
-        imageUrl: css,
-        name: "CSS",
-        type: "Frontend",
-    },
-    {
-        imageUrl: express,
-        name: "Express",
-        type: "Backend",
-    },
-    {
-        imageUrl: git,
-        name: "Git",
-        type: "Version Control",
-    },
-    {
-        imageUrl: github,
-        name: "GitHub",
-        type: "Version Control",
-    },
-    {
-        imageUrl: html,
-        name: "HTML",
-        type: "Frontend",
-    },
-    {
-        imageUrl: javascript,
-        name: "JavaScript",
-        type: "Frontend",
-    },
-    {
-        imageUrl: mongodb,
-        name: "MongoDB",
-        type: "Database",
-    },
-    {
-        imageUrl: motion,
-        name: "Motion",
-        type: "Animation",
-    },
-    {
-        imageUrl: mui,
-        name: "Material-UI",
-        type: "Frontend",
-    },
-    {
-        imageUrl: nextjs,
-        name: "Next.js",
-        type: "Frontend",
-    },
-    {
-        imageUrl: nodejs,
-        name: "Node.js",
-        type: "Backend",
-    },
-    {
-        imageUrl: react,
-        name: "React",
-        type: "Frontend",
-    },
-    {
-        imageUrl: redux,
-        name: "Redux",
-        type: "State Management",
-    },
-    {
-        imageUrl: sass,
-        name: "Sass",
-        type: "Frontend",
-    },
-    {
-        imageUrl: tailwindcss,
-        name: "Tailwind CSS",
-        type: "Frontend",
-    },
-    {
-        imageUrl: typescript,
-        name: "TypeScript",
-        type: "Frontend",
-    }
-];
 
-export const experiences = [
+
+export const histories = [
     {
-        title: "React.js Developer",
-        company_name: "Starbucks",
-        icon: starbucks,
+        title: "Konsep & Pembangunan",
         iconBg: "#accbe1",
-        date: "March 2020 - April 2021",
+        date: "1880an",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+            "Pada pertengahan 1880-an, insinyur Maurice Koechlin dan Émile Nouguier di bawah bimbingan Gustave Eiffel mengusulkan desain menara besi setinggi 300 meter untuk Pameran Dunia 1889. Setelah melalui protes dari seniman dan arsitek, konstruksi dimulai pada 1887 dan selesai pada Maret 1889, menjadikannya struktur tertinggi di dunia."
         ],
     },
     {
-        title: "React Native Developer",
-        company_name: "Tesla",
-        icon: tesla,
+        title: "Ancaman Pembongkaran",
         iconBg: "#fbc3bc",
-        date: "Jan 2021 - Feb 2022",
+        date: "1890 - 1910",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+            "Setelah Pameran Dunia, Menara Eiffel hampir dibongkar karena izin mendirikan hanya berlaku 20 tahun. Namun, Gustave Eiffel berhasil menyelamatkannya dengan membuktikan kegunaannya sebagai alat komunikasi radio, yang mulai populer dan bernilai strategis bagi Prancis."
         ],
     },
     {
-        title: "Web Developer",
-        company_name: "Shopify",
-        icon: shopify,
+        title: "Era Komunikasi Radio",
         iconBg: "#b7e4c7",
-        date: "Jan 2022 - Jan 2023",
+        date: "1920 - 1930",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+            "Menara Eiffel menjadi pusat komunikasi nirkabel, dengan antena yang mendukung siaran radio dan komunikasi internasional. Pada masa ini, terjadi kejadian penipuan terkenal ketika seorang pria mengaku “menjual” menara sebagai besi bekas, yang mencatat sejarah unik tersendiri.",
         ],
     },
     {
-        title: "Full stack Developer",
-        company_name: "Meta",
-        icon: meta,
+        title: "Nazi & Perang Dunia II",
         iconBg: "#a2d2ff",
-        date: "Jan 2023 - Present",
+        date: "1940an",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+            "Saat Perang Dunia II, kabel lift Menara Eiffel dipotong untuk mencegah akses tentara Nazi. Meskipun ada okupasi Jerman, menara ini menjadi simbol ketahanan Prancis, berdiri tegak hingga akhir perang dan kemudian dipulihkan untuk kembali berfungsi penuh.",
+        ],
+    },
+    {
+        title: "Renovasi & Modernisasi",
+        iconBg: "#de32ff",
+        date: "1950 - 1980",
+        points: [
+            "Pada periode ini, Menara Eiffel menjalani renovasi dan pengecatan ulang secara berkala untuk menjaga strukturnya. Pada 1980-an, pencahayaan malam hari ditambahkan, menjadikan menara semakin menarik dan romantis bagi pengunjung.",
+        ],
+    },
+    {
+        title: "Warisan Budaya",
+        iconBg: "#aed23f",
+        date: "1990 - Sekarang",
+        points: [
+            "Pencahayaan khusus ditambahkan pada 2000 untuk menyambut milenium baru, menambah daya tarik malam hari. Kini, Menara Eiffel menjadi ikon global, menerima jutaan pengunjung setiap tahun, dan tetap dipelihara sebagai simbol budaya Prancis serta salah satu monumen paling terkenal di dunia.",
         ],
     },
 ];

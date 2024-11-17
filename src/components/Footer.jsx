@@ -9,16 +9,16 @@ const Footer = () => {
 
       <div className='footer-container'>
         <p>
-          © 2023 <strong>Adrian Hajdin</strong>. All rights reserved.
+          © 2024 <strong>Grafika Komputer</strong>. All rights reserved.
         </p>
 
-        <div className='flex gap-3 justify-center items-center'>
+        <div className='flex items-center justify-center gap-3'>
           {socialLinks.map((link) => (
             <Link key={link.name} to={link.link} target='_blank'>
               <img
                 src={link.iconUrl}
                 alt={link.name}
-                className='w-6 h-6 object-contain'
+                className='object-contain w-6 h-6'
               />
             </Link>
           ))}

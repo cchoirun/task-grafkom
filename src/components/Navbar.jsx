@@ -6,14 +6,14 @@ const Navbar = () => {
   return (
     <header className='header'>
       <NavLink to='/'>
-        <img src={logo} alt='logo' className='w-18 h-18 object-contain' />
+        <img src={logo} alt='logo' className='object-contain w-18 h-18' />
       </NavLink>
-      <nav className='flex text-lg gap-7 font-medium'>
+      <nav className='flex text-lg font-medium gap-7'>
         <NavLink to='/about' className={({ isActive }) => isActive ? "text-blue-600" : "text-black" }>
-          About
+          Tentang
         </NavLink>
-        <NavLink to='/projects' className={({ isActive }) => isActive ? "text-blue-600" : "text-black"}>
-          Projects
+        <NavLink to='/contact' className={({ isActive }) => isActive ? "text-blue-600" : "text-black"}>
+          Kontak
         </NavLink>
       </nav>
     </header>

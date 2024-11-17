@@ -1,13 +1,13 @@
 import { useEffect, useRef } from "react";
 import { useGLTF, useAnimations } from "@react-three/drei";
 
-import planeScene from "../assets/3d/plane.glb";
+import nmaxScene from "../assets/3d/honda_pcx.glb";
 
 // 3D Model from: https://sketchfab.com/3d-models/stylized-ww1-plane-c4edeb0e410f46e8a4db320879f0a1db
 export function Plane({ isRotating, ...props }) {
   const ref = useRef();
   // Load the 3D model and its animations
-  const { scene, animations } = useGLTF(planeScene);
+  const { scene, animations } = useGLTF(nmaxScene);
   // Get animation actions associated with the plane
   const { actions } = useAnimations(animations, ref);
 
@@ -15,9 +15,9 @@ export function Plane({ isRotating, ...props }) {
   // Note: Animation names can be found on the Sketchfab website where the 3D model is hosted.
   useEffect(() => {
     if (isRotating) {
-      actions["Take 001"].play();
+      actions["Animation"].play();
     } else {
-      actions["Take 001"].stop();
+      actions["Animation"].stop();
     }
   }, [actions, isRotating]);
 
