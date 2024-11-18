@@ -1,20 +1,15 @@
 import { Canvas } from "@react-three/fiber";
-import { Suspense, useEffect, useRef, useState } from "react";
+import { Suspense, useState } from "react";
 
 import { HomeInfo, Loader } from "../components";
-import { soundoff, soundon } from "../assets/icons";
 import { Eifel, Motor, Sky } from "../models";
 
 const Home = () => {
-  const audioRef = useRef(new Audio(sakura));
-  audioRef.current.volume = 0.4;
-  audioRef.current.loop = true;
+  
 
   const [currentStage, setCurrentStage] = useState(1);
   const [isRotating, setIsRotating] = useState(false);
-
-  useEffect(() => {
-    
+  
 
   const adjustBiMotorForScreenSize = () => {
     let screenScale, screenPosition;
