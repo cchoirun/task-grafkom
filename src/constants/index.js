@@ -1,9 +1,6 @@
 import {
-    car,
     contact,
     github,
-    html,
-    javascript,
     linkedin,
 } from "../assets/icons";
 
