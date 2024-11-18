@@ -1,5 +1,4 @@
 export { Sky } from "./Sky";
-// export { Bird } from './Bird'
-export { Plane } from "./Plane";
-export { Island } from "./Island";
+export { Motor } from "./Motor";
+export { Eifel } from "./Eifel";
 export { Fox } from "./Fox"

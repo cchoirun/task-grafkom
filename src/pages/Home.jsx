@@ -4,7 +4,7 @@ import { Suspense, useEffect, useRef, useState } from "react";
 import sakura from "../assets/sakura.mp3";
 import { HomeInfo, Loader } from "../components";
 import { soundoff, soundon } from "../assets/icons";
-import { Island, Plane, Sky } from "../models";
+import { Eifel, Motor, Sky } from "../models";
 
 const Home = () => {
   const audioRef = useRef(new Audio(sakura));
@@ -25,10 +25,9 @@ const Home = () => {
     };
   }, [isPlayingMusic]);
 
-  const adjustBiplaneForScreenSize = () => {
+  const adjustBiMotorForScreenSize = () => {
     let screenScale, screenPosition;
 
-    // If screen width is less than 768px, adjust the scale and position
     if (window.innerWidth < 768) {
       screenScale = [1, 1, 1];
       screenPosition = [0, -3, 0];
@@ -40,7 +39,7 @@ const Home = () => {
     return [screenScale, screenPosition];
   };
 
-  const adjustIslandForScreenSize = () => {
+  const adjustEifelForScreenSize = () => {
     let screenScale, screenPosition;
 
     if (window.innerWidth < 768) {
@@ -54,8 +53,8 @@ const Home = () => {
     return [screenScale, screenPosition];
   };
 
-  const [biplaneScale, biplanePosition] = adjustBiplaneForScreenSize();
-  const [islandScale, islandPosition] = adjustIslandForScreenSize();
+  const [biMotorScale, biMotorPosition] = adjustBiMotorForScreenSize();
+  const [EifelScale, EifelPosition] = adjustEifelForScreenSize();
 
   return (
     <section className='relative w-full h-screen'>
@@ -63,7 +62,7 @@ const Home = () => {
         {currentStage && <HomeInfo currentStage={currentStage} />}
       </div>
 
-      <Canvas colormanagement={true}
+      <Canvas
         className={`w-full h-screen bg-transparent ${
           isRotating ? "cursor-grabbing" : "cursor-grab"
         }`}
@@ -87,19 +86,19 @@ const Home = () => {
 
           
           <Sky isRotating={isRotating} />
-          <Island
+          <Eifel
             isRotating={isRotating}
             setIsRotating={setIsRotating}
             setCurrentStage={setCurrentStage}
-            position={islandPosition}
+            position={EifelPosition}
             rotation={[0.1, 4.7077, 0]}
-            scale={islandScale}
+            scale={EifelScale}
           />
-          <Plane
+          <Motor
             isRotating={isRotating}
-            position={biplanePosition}
+            position={biMotorPosition}
             rotation={[0, 0, 0]}
-            scale={biplaneScale}
+            scale={biMotorScale}
           />
         </Suspense>
       </Canvas>
